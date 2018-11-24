@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlarmPlayerActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageViewAlarm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="255dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--app:srcCompat="@mipmap/ic_launcher" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifView"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:src="@drawable/alarm" />
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Stop Alarm"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</LinearLayout>
