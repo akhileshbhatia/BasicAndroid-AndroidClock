@@ -90,7 +90,7 @@ public class MySurfaceView extends SurfaceView implements Runnable {
         numbersPaint.setTextSize(50);
 
         width = getWidth()/2;
-        height = getHeight()/2;
+        height = getHeight()/3;
 
     }
 

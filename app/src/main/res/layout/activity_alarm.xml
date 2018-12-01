@@ -32,5 +32,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
         android:text="Save Alarm"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/buttonstyle"/>
 </LinearLayout>

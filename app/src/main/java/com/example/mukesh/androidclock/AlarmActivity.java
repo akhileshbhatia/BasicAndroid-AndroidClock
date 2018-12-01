@@ -60,7 +60,7 @@ public class AlarmActivity extends AppCompatActivity {
                 alarmManager.set(AlarmManager.RTC_WAKEUP,timePickerDateTime.getTimeInMillis(),pendingIntent);
 
                 Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),ClockActivity.class);
                 startActivity(intent);
             }
         });

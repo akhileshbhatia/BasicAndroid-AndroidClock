@@ -19,7 +19,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
@@ -30,20 +31,21 @@
             android:layout_weight="1"
             android:text="Clock Hands"
             android:textAlignment="viewStart"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerHandsColor"
             android:layout_width="231dp"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
@@ -54,20 +56,21 @@
             android:layout_weight="1"
             android:text="Clock Marks"
             android:textAlignment="viewStart"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerMarksColor"
             android:layout_width="231dp"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
@@ -78,20 +81,21 @@
             android:layout_weight="1"
             android:text="Clock Background"
             android:textAlignment="viewStart"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerBackgroundColor"
             android:layout_width="231dp"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
@@ -102,20 +106,21 @@
             android:layout_weight="1"
             android:text="Clock Numbers"
             android:textAlignment="viewStart"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerNumColor"
             android:layout_width="231dp"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <Button
@@ -124,6 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
             android:text="Save Preference"
             android:textAllCaps="false" />
 
@@ -133,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
             android:text="Save Preference &amp; View Clock"
             android:textAllCaps="false" />
     </LinearLayout>
