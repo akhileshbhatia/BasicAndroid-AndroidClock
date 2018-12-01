@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,6 +42,7 @@ public class PreferencesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferences);
+        setupMenu();
         preferences = getApplicationContext().getSharedPreferences("ClockColors", Context.MODE_PRIVATE);
         preferencesEditor = preferences.edit();
         btnPref = findViewById(R.id.btnSavePref);
@@ -157,5 +160,25 @@ public class PreferencesActivity extends AppCompatActivity {
         preferencesEditor.commit();
     }
 
+    private void setupMenu(){
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Android Clock");
+        actionBar.setSubtitle("Update Preferences");
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_SHOW_TITLE);
+        actionBar.show();
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(getApplicationContext(),ClockActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

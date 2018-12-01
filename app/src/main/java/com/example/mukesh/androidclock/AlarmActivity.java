@@ -4,8 +4,10 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
@@ -23,7 +25,7 @@ public class AlarmActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
-
+        setupMenu();
         timePicker = findViewById(R.id.timePicker);
         timePicker.setIs24HourView(true);
 
@@ -67,5 +69,26 @@ public class AlarmActivity extends AppCompatActivity {
 
     }
 
+    private void setupMenu(){
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Android Clock");
+        actionBar.setSubtitle("Set Alarm");
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_SHOW_TITLE);
+        actionBar.show();
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(getApplicationContext(),ClockActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
 }

@@ -78,20 +78,20 @@ public class ClockActivity extends AppCompatActivity {
     private void initializeViewPrefBtn(){
         layoutParamsViewPref = new LinearLayout.LayoutParams
                 (LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
-        layoutParamsViewPref.setMargins(50,1200,10,10);
+        layoutParamsViewPref.setMargins(75,1200,10,10);
 
         viewPrefBtn = new Button(getApplicationContext());
         viewPrefBtn.setPadding(25,25,25,25);
         viewPrefBtn.setBackgroundColor(Color.WHITE);
         viewPrefBtn.setBackground(ContextCompat.getDrawable(this,R.drawable.buttonstyle));
-        viewPrefBtn.setText("View Clock Preferences");
+        viewPrefBtn.setText("Update Preferences");
 
     }
 
     private void initializeSetAlarmBtn(){
         layoutParamsSetAlarm = new LinearLayout.LayoutParams
                 (LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
-        layoutParamsSetAlarm.setMargins(150,1200,10,10);
+        layoutParamsSetAlarm.setMargins(175,1200,10,10);
         setAlarmBtn = new Button(getApplicationContext());
         setAlarmBtn.setPadding(25,25,25,25);
         setAlarmBtn.setBackgroundColor(Color.WHITE);
